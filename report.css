@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    /* overflow: hidden; */
+    background-color: green;
+    overflow-x: hidden;
+}
+/* ::-webkit-input-placeholder{
+    color: white;
+} */
+input{
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 300px;
+    background-color: white;
+}
+textarea.form-control {
+    height: auto;
+    width: 300px;
+}
+.btn{
+    color: white;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    border-radius: 8px;
+    
+}
+span{
+    color: red;
+}
+
+.navBar{
+    margin-top: 60px;
+}
+.Form-col{
+    margin-top: 60px;
+}
+.outerCircle{
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: -299px;
+    background: conic-gradient( rgb(126, 126, 208) 120deg, crimson 120deg 180deg, white 180deg 300deg,  green 300deg);
+    transform: rotate(115deg);
+    overflow: hidden;
+    
+}
+
+.innerCircle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    position: absolute;
+    bottom: 154px;
+    right: 180px;
+    z-index: 11;
+    background-color: white;
+    border: 4px solid gold;
+}
+.login{
+    position: relative;
+    z-index: 11;
+    top: 26px;
+    left: -313px;
+    transform: rotate(-166deg);
+    color: black; 
+    
+}
+
+.resetAccess{
+    position: relative;
+    z-index: 11;
+    bottom: 265px;
+    right: -167px;
+    transform: rotate(-60deg);
+    color: white;
+}
+.report{
+    position: relative;
+    z-index: 11;
+    transform: rotate(244deg);
+    right: 137px;
+    top: -171px;
+    color: white;
+
+}
+
+
+/* Media Queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    body{
+        overflow: visible;
+    }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .outerCircle{
+        width: 550px;
+        height: 550px;
+    }
+    .innerCircle{
+        width: 240px;
+        height: 240px;
+    }
+    .login{
+        top: 25px;
+        left: -271px;
+    }
+    .report{
+        right: 130px;
+        top: -158px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .outerCircle{
+        width: 620px;
+        height: 620px;
+    }
+    .innerCircle{
+        width: 300px;
+        height: 300px;
+    }
+}
